@@ -1,0 +1,421 @@
+/*global code for both pages this is being inherited*/
+body {
+    font: 15px/1.5 Arial, Helvetica, san-serif;
+    background: color #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/*home page code*/
+.showcase {
+    margin: auto;
+    width: 85%;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 4px solid;
+}
+
+.menu {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    font-size: 16px;
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header nav {
+    float: right;
+}
+
+header #company {
+    float: left;
+}
+
+header #company h1 {
+    margin: 0;
+}
+
+header .design {
+    color: #e8491d;
+}
+
+header #working a {
+    color: black;
+    font-weight: bold;
+}
+
+.showcase-1::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    transition: all 1000ms;
+
+}
+
+.showcase-1:hover::after {
+    filter: blur(0px);
+}
+
+.texts {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 350px;
+    margin-left: -280px;
+    width: 600px;
+    height: 400px;
+    transition: all 1000ms;
+}
+
+.texts .one {
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.texts .two {
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    line-height: 1.7;
+
+}
+
+.texts .two:hover {
+    filter: blur(2px);
+
+}
+
+.texts .one:hover {
+    filter: blur(2px);
+}
+
+.button-1 {
+    height: 34px;
+    width: 100px;
+    background: #e8491d;
+    font-size: 1.1em;
+}
+
+.button-1:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.container input[type="text"] {
+    padding: 2px;
+    height: 25px;
+}
+
+.container input[type="email"] {
+    padding: 2px;
+    height: 25px;
+}
+
+footer #current {
+    margin-top: 0;
+}
+
+/*css styling of about page*/
+
+
+.img-1 {
+    margin-bottom: 100px;
+    width: 500px;
+    margin-right: 60px;
+    float: right;
+
+}
+
+.grid-1 {
+    margin-bottom: 100px;
+    width: 500px;
+    float: left;
+    margin-left: 80px;
+
+}
+
+.imgn {
+
+    width: 800px;
+    height: 650px;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+
+
+.img-left {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+.grid {
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.img-right {
+    width: 650px;
+    height: 450px;
+    float: left;
+    margin-right: 10px;
+    margin-right: 250px;
+}
+
+.container .medium {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+/*css style for service*/
+#main {
+
+
+    height: 70vh;
+
+
+}
+
+.dark-1 {
+    margin-top: 50px;
+    margin-right: 30px;
+    float: right;
+    width: 30%;
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px;
+}
+
+
+.article-1 {
+    float: left;
+    width: 55%;
+    margin-left: 30px;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+
+/* css styling of contact page*/
+.align {
+    background-color: #f4f4f4;
+    margin: auto;
+    text-align: center;
+
+}
+
+.container-1 input[type="text"] {
+    width: 350px;
+    height: 30px;
+}
+
+.container-1 input[type="email"] {
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.container-1 textarea[name="comment"] {
+    width: 350px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+
+.button-3 {
+    width: 350px;
+    height: 30px;
+    background-color: #e8491d;
+    color: #ffffff;
+    text-align: center;
+    border: 0;
+    margin-top: 10px;
+}
+
+.button-3:hover {
+    background-color: #000;
+}
+
+.contact-1 .contact {
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+address {
+    margin-top: 10px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.address-1 {
+    margin-bottom: 10px;
+}
+
+/*css style for login page*/
+
+
+#login-form {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+
+}
+
+#name-label {
+    font-family: arial, helvetica, san-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#name {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#email-label {
+    font-family: arial, helvetica, san-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#email {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.button-2 {
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #35424a;
+}
+
+.button-2:hover {
+    background-color: #9ce02f;
+}
+
+.login-form2 {
+    width: 220px;
+    min-height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+}
+
+.login-form2 .float-right {
+    float: right;
+}
+
+.login-form2 .float-left {
+    float: left;
+
+}
+
+
+/*css style for footer*/
+
+footer {
+    padding: 20px;
+    background-color: #e8491d;
+    text-align: center;
+    color: #ffffff;
+    bottom: 0px;
+}
+
+footer i {
+    color: #000;
+}
+
+/*responsive web design/media quary*/
+@media(max-width: 768px) {
+
+    haeder #company,
+    .img-1,
+    .grid-1,
+    .imgn,
+    .form-1 {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header li {
+        display: inline;
+        float: none;
+        padding: 5px;
+
+    }
+
+    .menu:hover {
+        opacity: 1.5;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header {
+        padding: 20px;
+
+    }
+
+    .showcase-1 {
+        margin-bottom: 20px;
+    }
+
+    #current {
+        margin-top: 0;
+    }
+
+}
